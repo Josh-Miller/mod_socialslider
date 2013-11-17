@@ -1,0 +1,63 @@
+html{border-bottom:1px solid transparent;min-height:100%;color: #cc0000;}
+#menu-pane input.short,
+#menu-pane input.medium,
+#menu-pane select.short,
+.paramlist_value .inputbox,
+.paramlist_value input.text_area{min-height:20px;border:1px solid #d1d1d1;border-radius:3px 3px;-moz-border-radius:3px 3px;-webkit-border-radius:3px 3px;font-size:14px;padding:3px 5px;float:left;	margin:0 4px 0 0;}
+
+.pane-sliders .panel h3 {
+    background: url("images/mod_header_pearl.png") repeat-x !important;
+    padding: 10px 0;
+}
+.jpane-toggler-down span {
+    background: url("images/crew-arr-dwn.png") no-repeat scroll 5px 50% !important;
+}
+.jpane-toggler span {
+    background: url("images/crew-arr.png") no-repeat scroll 5px 50% !important;
+}
+div.col:nth-child(1) tr:nth-child(8) {
+    background: none;
+}
+
+#menu-pane div.panel:nth-child(1) tr:nth-child(8) {
+    background: url("../tmpl/panel/images/twitter.png") no-repeat right;
+}
+tr:nth-child(10) {
+    background: url("../tmpl/panel/images/facebook.png") no-repeat right;
+}
+tr:nth-child(12) {
+    background: url("../tmpl/panel/images/linkedin.png") no-repeat right;
+}
+tr:nth-child(14) {
+    background: url("../tmpl/panel/images/youtube.png") no-repeat right;
+}
+tr:nth-child(16) {
+    background: url("../tmpl/panel/images/myspace.png") no-repeat right;
+}
+tr:nth-child(18) {
+    background: url("../tmpl/panel/images/digg.png") no-repeat right;
+}
+tr:nth-child(20) {
+    background: url("../tmpl/panel/images/skype.png") no-repeat right;
+}
+tr:nth-child(22) {
+    background: url("../tmpl/panel/images/delicious.png") no-repeat right;
+}
+tr:nth-child(24) {
+    background: url("../tmpl/panel/images/tumblr.png") no-repeat right;
+}
+tr:nth-child(26) {
+    background: url("../tmpl/panel/images/orkut.png") no-repeat right;
+}
+tr:nth-child(28) {
+    background: url("../tmpl/panel/images/stumbleupon.png") no-repeat right;
+}
+tr:nth-child(30) {
+    background: url("../tmpl/panel/images/vimeo.png") no-repeat right;
+}
+tr:nth-child(32) {
+    background: url("../tmpl/panel/images/tweeth.png") no-repeat right;
+}
+tr:nth-child(34) {
+    background: url("../tmpl/panel/images/dbcompact.png") no-repeat right;
+}

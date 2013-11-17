@@ -1,0 +1,64 @@
+
+.social-slider-menu {
+    width: 39px;
+    position: absolute;
+    
+}
+#crew-share {
+    background: url("images/crew-share.png") no-repeat;
+    height: 163px;
+    width: 43px;
+    float: left;
+    position: absolute;
+}
+#crew-inside-panel {
+    right: 0px;
+    width: 94px;
+    padding: 10px;
+    margin: 5px 0 0;
+}
+#crew-inside-panel img {
+    padding: 4px;
+}
+.social_active {
+    background: url("images/crew-share-focus.png") no-repeat !important;
+}
+#crew-panel-top-left {
+    background: url("images/crew-top-left.png") no-repeat left top;
+}
+#crew-panel-top-right {
+    background: url("images/crew-top-right.png") no-repeat right top;
+    padding: 0 11px;
+}
+#crew-panel-top {
+    background: url("images/crew-top.png") repeat-x top;
+    height: 14px;
+}
+#crew-panel-bottom-left {
+    background: url("images/crew-bottom-left.png") no-repeat left bottom;
+}
+#crew-panel-bottom-right {
+    background: url("images/crew-bottom-right.png") no-repeat right bottom;
+    padding: 0 11px;
+}
+#crew-panel-bottom {
+    background: url("images/crew-bottom.png") repeat-x bottom;
+    height: 14px;
+}
+#crew-panel-inside {
+    background: #ffffff;
+    width: 80px;
+    margin: 0 auto;
+}
+#crew-panel-left {
+    background: url("images/crew-side-left.png") repeat-y left;
+}
+#crew-panel-right {
+    background: url("images/crew-side-right.png") repeat-y right;
+}
+.social-clear {
+    clear: both;
+}
+.db-wrapper {
+    text-align: left;
+}

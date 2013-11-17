@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.7.0" client="site" method="upgrade">
+    <name>Social Slider</name>
+    <author>Crew Designs</author>
+    <creationDate>9/23/2012</creationDate>
+    <copyright>Crew Designs LLC Copyright 2012</copyright>
+    <license>GPL/GNU</license>
+    <authorEmail>josh@crewthemes.com</authorEmail>
+    <version>1.0.2b</version>
+    <description><![CDATA[<p>This is the perfect little module to let your users connect to you on more networks.  This is a simple and easy to use
+    Social Media module for displaying your information.</p><p style="float: left;">Developed by <a href="http://crewdesigns.net">Crew Designs</a></p>]]></description>
+    <updateservers>
+		<server type="extension" priority="1" name="Social Slider"><![CDATA[http://crewdesigns.net/index.php?option=com_ars&view=update&task=stream&format=xml&id=4]]></server>
+	</updateservers>
+    <files>
+        <filename module="mod_socialslider">mod_socialslider.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+	<folder>js</folder>
+	<folder>lib</folder>
+        
+    </files>
+    <config>
+		<fields name="params">
+			<fieldset name="basic">
+		        <field name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;width: 400px;text-shadow:1px 1px 2px #000;color:#fff;padding:4px;margin:0;background:#51b1dc;&quot;&gt;Load jQuery 1.4 - if you already have jQuery loaded from another extension turn this off&lt;/div&gt;" label="" description="" />
+		        <field name="jquery" type="radio" default="1"
+			    label="Enable jQuery" description="Turn on/off jQuery from being loaded in the head section of your template.  This MUST be enabled if you do not have jQuery already loaded.">
+				<option value="0">Disable</option>
+				<option value="1">Enable</option>
+			        </field>
+				<field name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;width: 400px;text-shadow:1px 1px 2px #000;color:#fff;padding:4px;margin:0;background:#51b1dc;&quot;&gt;Theme Selection&lt;/div&gt;" label="" description="" />
+				<field name="template" type="list" default="default"
+				    label="Select your theme" description="The theme changes the look and feel of the module.">
+				<option value="default">Default</option>
+				<option value="panel">Panel</option>
+				<option value="panel-small">Panel Small</option>
+			        </field>
+			        <field name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;width: 400px;text-shadow:1px 1px 2px #000;color:#fff;padding:4px;margin:0;background:#51b1dc;&quot;&gt;Social Media Menu&lt;/div&gt;" label="" description="" />
+				<field name="twitter" type="radio" default="1"
+				    label="Enable Twitter Icon" description="Show/Hide Twitter icon.">
+				<option value="0">Disable</option>
+				<option value="1">Enable</option>
+			        </field>
+			        <field name="twitter-link" type="text" default="" size="40" label="Twitter Link" description="Type in the address to your Twitter link." />
+			        <field name="facebook" type="radio" default="1"
+				    label="Enable Facebook Icon" description="Show/Hide Facebook icon.">
+				<option value="0">Disable</option>
+				<option value="1">Enable</option>
+			        </field>
+			        <field name="facebook-link" type="text" default="" size="40" label="Facebook Link" description="Type in the address to your Facebook link." />
+			       <field name="linkedin" type="radio" default="1"
+				    label="Enable Linked In Icon" description="Show/Hide Linked In icon.">
+				<option value="0">Disable</option>
+				<option value="1">Enable</option>
+			        </field>
+			        <field name="linkedin-link" type="text" default="" size="40" label="Linked In Link" description="Type in the address to your Linked In link." />
+			        <field name="youtube" type="radio" default="1"
+				    label="Enable YouTube Icon" description="Show/Hide YouTube icon.">
+				<option value="0">Disable</option>
+				<option value="1">Enable</option>
+			        </field>
+			        <field name="youtube-link" type="text" default="" size="40" label="Youtube Link" description="Type in the address to your YouTube link." />
+			        <field name="myspace" type="radio" default="1"
+				    label="Enable MySpace Icon" description="Show/Hide MySpace icon.">
+				<option value="0">Disable</option>
+				<option value="1">Enable</option>
+			        </field>
+			        <field name="myspace-link" type="text" default="" size="40" label="MySpace Link" description="Type in the address to your MySpace link." />
+				<field name="digg" type="radio" default="1"
+				    label="Enable Digg Icon" description="Show/Hide MySpace icon.">
+				<option value="0">Disable</option>
+				<option value="1">Enable</option>
+			        </field>
+			        <field name="digg-link" type="text" default="" size="40" label="Digg Link" description="Type in the address to your Digg link." />
+				<field name="skype" type="radio" default="1"
+				    label="Enable Skype Icon" description="Show/Hide Skype icon.">
+				<option value="0">Disable</option>
+				<option value="1">Enable</option>
+			        </field>
+			        <field name="skype-link" type="text" default="" size="40" label="Skype Link" description="Type in the address to your Skype link." />
+				<field name="delicious" type="radio" default="1"
+				    label="Enable Delicious Icon" description="Show/Hide Delicious icon.">
+				<option value="0">Disable</option>
+				<option value="1">Enable</option>
+			        </field>
+			        <field name="delicious-link" type="text" default="" size="40" label="Delicious Link" description="Type in the address to your Delicious link." />
+				<field name="tumblr" type="radio" default="1"
+				    label="Enable Tumblr Icon" description="Show/Hide Tumblr icon.">
+				<option value="0">Disable</option>
+				<option value="1">Enable</option>
+			        </field>
+			        <field name="tumblr-link" type="text" default="" size="40" label="Tumblr Link" description="Type in the address to your Tumblr link." />
+				<field name="orkut" type="radio" default="1"
+				    label="Enable Orkut Icon" description="Show/Hide Orkut icon.">
+				<option value="0">Disable</option>
+				<option value="1">Enable</option>
+			        </field>
+			        <field name="orkut-link" type="text" default="" size="40" label="Orkut Link" description="Type in the address to your Orkut link." />
+				<field name="stumbleupon" type="radio" default="1"
+				    label="Enable Stumble Upon Icon" description="Show/Hide Stumble Upon icon.">
+				<option value="0">Disable</option>
+				<option value="1">Enable</option>
+			        </field>
+			        <field name="stumbleupon-link" type="text" default="" size="40" label="Stumble Upon Link" description="Type in the address to your Stumble Upon link." />
+				<field name="vimeo" type="radio" default="1"
+				    label="Enable Vimeo Icon" description="Show/Hide Vimeo icon.">
+				<option value="0">Disable</option>
+				<option value="1">Enable</option>
+			        </field>
+			        <field name="vimeo-link" type="text" default="" size="40" label="Vimeo Link" description="Type in the address to your Vimeo link." />
+				<field name="tweet-this" type="radio" default="1"
+				    label="Enable Tweet This Icon" description="Show/Hide Tweet This icon.">
+				<option value="0">Disable</option>
+				<option value="1">Enable</option>
+			        </field>
+			        <field name="twitter-btn" type="radio" default="vertical"
+				    label="Choose your twitter button" description="Pick your style of twitter button you would like.">
+				<option value="vertical">Vertical</option>
+				<option value="horizontal">Horizontal</option>
+				<option value="none">No Count</option>
+			        </field>
+				<field name="twittername" type="text" default="" size="40" label="Twitter Name" description="Type in your Twitter name so when people tweet this they will mention you." />
+		    </fieldset>
+		    <fieldset name="advanced">
+				<field name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;width: 400px;text-shadow:1px 1px 2px #000;color:#fff;padding:4px;margin:0;background:#51b1dc;&quot;&gt;Position Settings&lt;/div&gt;" label="" description="" />
+			        <field name="left-right" type="radio" default="left"
+				    label="Float left/right" description="Float your icons on the left or right side of your website.">
+				<option value="left">Float left</option>
+				<option value="right">Float right</option>
+			        </field>
+			        <field name="padding-left" type="text" default="10px" size="10" label="Padding left/right" description="How much padding to the left or right. ADD 'px' to your number, ex. -20px" />
+				<field name="@spacer" type="spacer" default="&lt;div style=&quot;font-weight:bold;font-size:14px;width: 400px;text-shadow:1px 1px 2px #000;color:#fff;padding:4px;margin:0;background:#51b1dc;&quot;&gt;Animation Settings&lt;/div&gt;" label="" description="" />
+				<field name="duration" type="text" default="500" size="10" label="Duration" description="How long it takes for the slider to slide." />
+				<field name="topLimit" type="text" default="30" size="10" label="Top Limit" description="The space between the top of your site and the slider." />
+				<field name="topMargin" type="text" default="40" size="10" label="Top Margin" description="The space between the top of your browser window and the slider." />
+				<field name="moduleclass_sfx" type="text" default="" size="10" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+    		</fieldset>
+		</fields>
+	</config>
+</extension>
